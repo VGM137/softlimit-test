@@ -1,5 +1,11 @@
 {
   "sections": {
+    "page_navigation": {
+      "type": "page-navigation",
+      "settings": {
+        "page_nav_linklist": "page-navigation"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -9,6 +15,7 @@
     }
   },
   "order": [
+    "page_navigation",
     "main"
   ]
 }

@@ -1,0 +1,93 @@
+<style>
+  .page-nav__wrapper {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+  }
+  .page-nav__wrapper ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .page-nav__wrapper li {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+  .page-nav__wrapper li:hover {
+    background: #f1f1f1;
+  }
+  .active-button {
+    background-color: black;
+    color: white
+  }
+  .page-nav__wrapper li.active-button:hover {
+    background-color: black;
+    color: white
+  }
+  @media screen and (min-width: 590px) {
+    .page-nav__wrapper {
+      width: 80%;
+    }
+    .page-nav__wrapper ul {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+</style>
+
+<div class="page-nav__wrapper">
+  <ul>
+    {% for link in section.settings.page_nav_linklist.links %}
+      <li
+        class="page-nav__item {% if link.active %}active-button{% endif %}"
+        data-title="{{ link.title }}"
+        data-url='{{ link.url }}'
+        data-content='{{ link.object.content | escape }}'>
+        {{ link.title }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<script>
+  let listItems = document.querySelectorAll('.page-nav__item')
+  listItems.forEach(item => item.onclick = (e) => handleClick(e));
+
+  const handleClick = (e) => {
+    listItems.forEach(item => item.classList.remove('active-button'));
+    let target = e.target;
+    target.classList.add('active-button');
+    let data = e.target.dataset;
+    let url = data.url;
+    let newTitle = data.title;
+    let newBody = data.content;
+    let contentWrapper = document.querySelector('.page-content__custom');
+    let titleWrapper = contentWrapper.querySelector('h1');
+    let bodyWrapper = contentWrapper.querySelector('.rte');
+    titleWrapper.innerHTML = newTitle;
+    bodyWrapper.innerHTML = newBody;
+    window.history.pushState(null, '', url);
+  };
+</script>
+
+{% schema %}
+  {
+    "name": "Page Nav",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "page_nav_linklist",
+        "label": "Add navigation to page"
+      }
+    ]
+  }
+{% endschema %}
