@@ -1,6 +1,6 @@
 <style>
   .page-nav__wrapper {
-    display: flex;
+    display: block;
     width: 90%;
     justify-content: center;
     margin: auto;
@@ -31,6 +31,21 @@
     background-color: black;
     color: white
   }
+
+  .custom-page-wrapper{
+    max-width: 100%;
+  }
+  .custom-page-wrapper h1{
+    text-align: center;
+  }
+  .page-custom-content{
+    max-width: 90%;
+    margin: auto;
+  }
+  .page-custom-content img{
+    max-width: 100%;
+  }
+  
   @media screen and (min-width: 590px) {
     .page-nav__wrapper {
       width: 80%;
@@ -39,42 +54,95 @@
       display: flex;
       flex-direction: row;
     }
+    .page-custom-content{
+      max-width: 80%;
+      margin: auto;
+    }
   }
 </style>
 
 <div class="page-nav__wrapper">
+  
   <ul>
     {% for link in section.settings.page_nav_linklist.links %}
       <li
         class="page-nav__item {% if link.active %}active-button{% endif %}"
         data-title="{{ link.title }}"
         data-url='{{ link.url }}'
-        data-content='{{ link.object.content | escape }}'>
+        data-page-id='{{section.id}}'
+        {% if link.title == 'About' %}
+          data-template='template--19413800812836__about'
+          {% elsif link.title == 'FAQs' %}
+          data-template='template--19414279160100__faqs'
+          {% elsif link.title == 'Size Guide' %}
+          data-template='template--19414314975524__page-size-guide'
+          {% elsif link.title == 'Test' %}
+          data-template='template--19414467739940__test'
+        {% endif %}  
+      > 
         {{ link.title }}
       </li>
     {% endfor %}
   </ul>
+
 </div>
 
 <script>
   let listItems = document.querySelectorAll('.page-nav__item')
   listItems.forEach(item => item.onclick = (e) => handleClick(e));
 
-  const handleClick = (e) => {
-    listItems.forEach(item => item.classList.remove('active-button'));
+  const handleClick = async (e) => {
     let target = e.target;
+    let url = `/?sections=${target.dataset.template}`
+
+    let oldPage
+
+    Array.from(listItems).find(item => {
+      if(item.classList.contains('active-button')){
+        item.classList.remove('active-button')
+        oldPage = document.querySelector(`#shopify-section-${item.dataset.template}`)
+      };
+    });
+
+    getData(url)
+    .then(async (data) => {
+      console.log(data)
+      let newPage = await createElementFromHTML(data[target.dataset.template])
+      console.log(newPage)
+      console.log(oldPage)
+      let mainContent = document.querySelector('#MainContent')
+      mainContent.replaceChild(newPage, oldPage)
+    })
+
     target.classList.add('active-button');
     let data = e.target.dataset;
-    let url = data.url;
-    let newTitle = data.title;
-    let newBody = data.content;
-    let contentWrapper = document.querySelector('.page-content__custom');
-    let titleWrapper = contentWrapper.querySelector('h1');
-    let bodyWrapper = contentWrapper.querySelector('.rte');
-    titleWrapper.innerHTML = newTitle;
-    bodyWrapper.innerHTML = newBody;
-    window.history.pushState(null, '', url);
+    let newUrl = data.url;
+    window.history.pushState(null, '', newUrl); 
   };
+
+  const createElementFromHTML = (htmlString) => {
+    var div = document.createElement('div');
+    div.innerHTML = htmlString.trim();
+  
+    return div.firstChild;
+  }
+
+  async function getData(url = "") {
+
+    const response = await fetch(url, {
+      method: "GET",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "same-origin",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
+    });
+    return response.json();
+    
+  }
 </script>
 
 {% schema %}

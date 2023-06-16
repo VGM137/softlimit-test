@@ -1,0 +1,83 @@
+<section class='custom-page-wrapper'>
+  <h1>{{section.settings.page_name}}</h1>
+  <div class='faqs-content page-custom-content'>
+    {%for block in section.blocks %}
+      {% if block.type == 'add_richtext' %}
+        <div class='page-richtext__content'>
+          {{block.settings.page_richtext}}
+        <div>
+      {% elsif block.type == 'add_image'%}
+        <div class='page-image__cotainer'>
+          <img src='{{ block.settings.page_image | image_url }}'>
+        <div>
+      {% endif %}
+      {%endfor%}
+    </div>
+  </section>
+
+{% schema %}
+  {
+    "name": "Size Guide",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "page_name",
+        "label": "Add a page name",
+        "default": "Size Guide"
+      },
+      {
+        "type": "page",
+        "id": "page_select",
+        "label": "Add a page content"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "add_richtext",
+        "name": "add_richtext",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "page_richtext",
+            "label": "Add content to the section"
+          }
+        ]
+      },
+      {
+        "type": "add_image",
+        "name": "add_image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "page_image",
+            "label": "Add an image to the section"
+          }
+        ]
+      },
+      {
+        "type": "liquid-code",
+        "name": "liquid",
+        "settings": [
+          {
+            "type": "liquid",
+            "id": "page_liquid",
+            "label": "Add liquid code to the page"
+          }
+        ]
+      },
+      {
+        "type": "html-code",
+        "name": "html",
+        "settings": [
+          {
+            "type": "html",
+            "id": "page_html",
+            "label": "Add html code to the page"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

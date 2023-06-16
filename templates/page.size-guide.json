@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "page_navigation": {
+      "type": "page-navigation",
+      "settings": {
+        "page_nav_linklist": "page-navigation"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "page-size-guide": {
+      "type": "page-size-guide",
+      "blocks": {
+        "a98a634d-fd92-4e36-a2dc-9a3fcc8658eb": {
+          "type": "add_image",
+          "settings": {
+            "page_image": "shopify:\/\/shop_images\/sizechart_US_men.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "a98a634d-fd92-4e36-a2dc-9a3fcc8658eb"
+      ],
+      "settings": {
+        "page_name": "Size Guide",
+        "page_select": ""
+      }
+    }
+  },
+  "order": [
+    "page_navigation",
+    "main",
+    "page-size-guide"
+  ]
+}

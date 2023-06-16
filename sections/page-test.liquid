@@ -1,0 +1,68 @@
+<section class='custom-page-wrapper'>
+  <h1>{{section.settings.page_name}}</h1>
+  <div class='faqs-content page-custom-content'>
+    {%for block in section.blocks %}
+      {% if block.type == 'add_richtext' %}
+        <div class='page-richtext__content'>
+          {{block.settings.page_richtext}}
+        <div>
+      {% endif %}
+    {%endfor%}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Test",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "page_name",
+        "label": "Add a page name",
+        "default": "Test"
+      },
+      {
+        "type": "page",
+        "id": "page_select",
+        "label": "Add a page content"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "add_richtext",
+        "name": "add_richtext",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "page_richtext",
+            "label": "Add content to the section"
+          }
+        ]
+      },
+      {
+        "type": "liquid-code",
+        "name": "liquid",
+        "settings": [
+          {
+            "type": "liquid",
+            "id": "page_liquid",
+            "label": "Add liquid code to the page"
+          }
+        ]
+      },
+      {
+        "type": "html-code",
+        "name": "html",
+        "settings": [
+          {
+            "type": "html",
+            "id": "page_html",
+            "label": "Add html code to the page"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

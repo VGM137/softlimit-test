@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "page_navigation": {
+      "type": "page-navigation",
+      "settings": {
+        "page_nav_linklist": "page-navigation"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "about": {
+      "type": "page-about",
+      "blocks": {
+        "c77553ad-c3c6-419b-ad9e-940da3e837b4": {
+          "type": "add_richtext",
+          "settings": {
+            "page_richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet risus feugiat in ante metus dictum. Ac feugiat sed lectus vestibulum mattis ullamcorper. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Lacinia quis vel eros donec ac odio tempor orci dapibus. Duis at consectetur lorem donec massa sapien. Placerat vestibulum lectus mauris ultrices eros. Nunc congue nisi vitae suscipit tellus mauris a. Diam phasellus vestibulum lorem sed risus ultricies tristique. A iaculis at erat pellentesque adipiscing. Malesuada nunc vel risus commodo viverra maecenas. Nisi scelerisque eu ultrices vitae auctor eu. Tristique risus nec feugiat in. Magna sit amet purus gravida quis blandit turpis cursus in. Integer malesuada nunc vel risus commodo viverra maecenas accumsan. Mauris vitae ultricies leo integer malesuada nunc vel risus commodo. Nisi porta lorem mollis aliquam. Ut tellus elementum sagittis vitae et leo duis ut diam.<\/p><p>Lectus urna duis convallis convallis tellus id interdum. Purus semper eget duis at tellus. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci. Imperdiet dui accumsan sit amet nulla facilisi morbi. Aenean pharetra magna ac placerat vestibulum lectus mauris. Et egestas quis ipsum suspendisse ultrices gravida. Mollis aliquam ut porttitor leo a diam. Nulla facilisi cras fermentum odio. Sed enim ut sem viverra aliquet eget. Mi bibendum neque egestas congue quisque egestas diam. Sed velit dignissim sodales ut eu. Integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque.<\/p><p>Eu non diam phasellus vestibulum lorem sed risus. Convallis posuere morbi leo urna molestie at elementum. Et tortor at risus viverra adipiscing at in. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Varius morbi enim nunc faucibus a pellentesque sit. In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Nullam non nisi est sit amet facilisis. Turpis egestas maecenas pharetra convallis posuere. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Arcu dui vivamus arcu felis bibendum ut tristique. Tellus orci ac auctor augue. Eget nunc scelerisque viverra mauris. Bibendum at varius vel pharetra vel. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Sodales ut eu sem integer vitae. Sociis natoque penatibus et magnis dis parturient montes. Enim sed faucibus turpis in eu mi. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Magna etiam tempor orci eu lobortis elementum.<\/p><p>Arcu dictum varius duis at consectetur lorem donec massa. Tellus id interdum velit laoreet id donec ultrices. Ut eu sem integer vitae justo eget magna fermentum. Non sodales neque sodales ut etiam sit amet. Massa enim nec dui nunc. Quam quisque id diam vel quam elementum pulvinar. Velit aliquet sagittis id consectetur purus ut faucibus. Duis convallis convallis tellus id interdum velit laoreet id. Suspendisse in est ante in nibh mauris cursus. Aliquam id diam maecenas ultricies mi eget mauris pharetra. Tortor at auctor urna nunc. Sapien nec sagittis aliquam malesuada bibendum arcu. Ut eu sem integer vitae justo eget magna fermentum iaculis. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Id aliquet risus feugiat in ante. Urna et pharetra pharetra massa massa ultricies mi quis. Nunc sed augue lacus viverra vitae congue eu consequat ac. Quis risus sed vulputate odio.<\/p><p> <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c77553ad-c3c6-419b-ad9e-940da3e837b4"
+      ],
+      "settings": {
+        "page_select": ""
+      }
+    }
+  },
+  "order": [
+    "page_navigation",
+    "main",
+    "about"
+  ]
+}

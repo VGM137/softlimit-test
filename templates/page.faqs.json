@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "page_navigation": {
+      "type": "page-navigation",
+      "settings": {
+        "page_nav_linklist": "page-navigation"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "faqs": {
+      "type": "page-faq",
+      "blocks": {
+        "3bf2b99a-2fd6-4526-9f9e-bf082dac42a6": {
+          "type": "add_richtext",
+          "settings": {
+            "page_richtext": "<p>In nibh mauris cursus mattis molestie. Et magnis dis parturient montes nascetur ridiculus mus mauris. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Eget gravida cum sociis natoque penatibus et magnis dis. Enim eu turpis egestas pretium aenean. Non enim praesent elementum facilisis leo vel. Sit amet nulla facilisi morbi tempus iaculis urna id. Egestas sed tempus urna et pharetra pharetra massa. Consectetur libero id faucibus nisl tincidunt eget nullam non. Sed risus pretium quam vulputate dignissim suspendisse in est. Auctor augue mauris augue neque. Iaculis nunc sed augue lacus viverra vitae congue. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. A cras semper auctor neque vitae. Fringilla ut morbi tincidunt augue interdum velit. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse.<\/p><p>Dui sapien eget mi proin sed libero enim. Aliquet sagittis id consectetur purus. Gravida arcu ac tortor dignissim convallis. Nibh tortor id aliquet lectus proin. Arcu odio ut sem nulla pharetra diam sit amet. Rhoncus mattis rhoncus urna neque. Cras ornare arcu dui vivamus arcu felis bibendum. Volutpat consequat mauris nunc congue nisi vitae suscipit. Volutpat diam ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque eu tincidunt tortor aliquam. Ultrices neque ornare aenean euismod elementum nisi. Tellus orci ac auctor augue mauris augue. Ullamcorper velit sed ullamcorper morbi. Cras ornare arcu dui vivamus arcu felis. Curabitur vitae nunc sed velit dignissim sodales ut. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. At varius vel pharetra vel turpis nunc. Laoreet non curabitur gravida arcu ac tortor.<\/p><p>Eleifend mi in nulla posuere sollicitudin aliquam. Massa tincidunt dui ut ornare lectus sit amet est placerat. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Sagittis vitae et leo duis ut diam quam. Lorem dolor sed viverra ipsum nunc aliquet. Malesuada fames ac turpis egestas sed tempus urna et pharetra. Velit dignissim sodales ut eu sem. Enim tortor at auctor urna nunc id. Maecenas pharetra convallis posuere morbi leo. Morbi non arcu risus quis varius quam quisque id diam. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Feugiat nibh sed pulvinar proin. Non blandit massa enim nec dui. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Semper risus in hendrerit gravida rutrum quisque non tellus. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Sodales neque sodales ut etiam sit amet nisl purus in.<\/p><p>Et pharetra pharetra massa massa ultricies mi quis. Nec feugiat in fermentum posuere. At quis risus sed vulputate odio ut enim blandit. Ut ornare lectus sit amet est placerat in. Egestas tellus rutrum tellus pellentesque. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna. Scelerisque eleifend donec pretium vulputate. Et molestie ac feugiat sed. Ornare aenean euismod elementum nisi quis eleifend quam. Tincidunt praesent semper feugiat nibh. Morbi enim nunc faucibus a. Aliquam sem et tortor consequat id porta. Adipiscing elit duis tristique sollicitudin nibh sit. Pharetra et ultrices neque ornare aenean. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique. Ullamcorper a lacus vestibulum sed arcu non odio. Natoque penatibus et magnis dis parturient.<\/p><p>Non odio euismod lacinia at quis risus sed vulputate odio. Fames ac turpis egestas maecenas pharetra. Accumsan tortor posuere ac ut consequat semper viverra nam. Pellentesque habitant morbi tristique senectus. Nisl pretium fusce id velit. Euismod elementum nisi quis eleifend quam adipiscing. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Nec tincidunt praesent semper feugiat nibh. Hac habitasse platea dictumst quisque sagittis purus. Aliquam sem fringilla ut morbi. Diam donec adipiscing tristique risus nec feugiat in fermentum. Netus et malesuada fames ac. Tincidunt id aliquet risus feugiat. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Ullamcorper sit amet risus nullam eget felis eget.<\/p><p>Ridiculus mus mauris vitae ultricies leo integer. Ac placerat vestibulum lectus mauris ultrices eros. Ultricies integer quis auctor elit. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. A pellentesque sit amet porttitor eget dolor morbi. Fames ac turpis egestas maecenas pharetra convallis. Et tortor consequat id porta nibh venenatis cras sed felis. Auctor neque vitae tempus quam. Morbi enim nunc faucibus a pellentesque. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor. A diam sollicitudin tempor id eu nisl nunc. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. Eget mi proin sed libero enim. Quam id leo in vitae turpis massa sed elementum. Elit eget gravida cum sociis natoque penatibus et magnis dis. Morbi tristique senectus et netus. Tortor at auctor urna nunc. Arcu cursus vitae congue mauris rhoncus aenean.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3bf2b99a-2fd6-4526-9f9e-bf082dac42a6"
+      ],
+      "settings": {
+        "page_name": "FAQs",
+        "page_select": ""
+      }
+    }
+  },
+  "order": [
+    "page_navigation",
+    "main",
+    "faqs"
+  ]
+}
